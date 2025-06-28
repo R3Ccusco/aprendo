@@ -1,0 +1,14 @@
+<h1>pagina de nostoros</h1>
+<p>mostrare lista de productos</p>
+<section>
+    <!--track me ayuda a diferencias cada elemento por su id-->
+    @for(producto of lstProductos; track producto.id){
+        <article>
+            <!-- angular le pone [img] para manipularlo y {{}} para mostrarlo = interpolar-->
+            <img [src]="producto.imagen" alt="producto.nombre">
+            <h3>{{producto.nombre}}</h3>
+            <p>{{producto.descripcion}}</p>
+            <strong>{{producto.precio}}</strong>
+        </article>
+    }
+</section>
