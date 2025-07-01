@@ -1,0 +1,16 @@
+<div style="text-align: center; margin-top: 50px;">
+  <h2>Inicio de sesión</h2>
+
+  @if (!estaAutenticado()) {
+    <form [formGroup]="credenciales" (ngSubmit)="login()">
+      <input type="text" placeholder="Usuario" formControlName="usuario" />
+      <br /><br />
+      <input type="password" placeholder="Contraseña" formControlName="contrasena" />
+      <br /><br />
+      <button type="submit">Iniciar sesión</button>
+    </form>
+  } @else {
+    <p>🔓 Estás logueado</p>
+    <button (click)="logout()">Cerrar sesión</button>
+  }
+</div>
