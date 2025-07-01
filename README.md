@@ -18,12 +18,38 @@
         </a>
     </div>
 
-<h5>Instalacion Global de Angular: </h5>
+<h5>Instalacion Global de Angular:</h5>
 
 ```
 npm install -g @angular/cli@latest
 ```
 
+<h5>actualizar npm:</h5>
+```
+npm install -g npm
+```
+
+<h5>Creo mi proyecto:</h5>
+```
+ng new miproyecto5
+```
+
+me pregunta:
+¿Quieres crear una aplicación sin zone.js?
+zone.js Detecta cambio en nuestras interfaces
+
+le pone NO
+
+Me pregunta:
+trabajar con css o less o sass
+
+Me pregunta:
+SSR = sitios estaticos prerenderizados
+del lado del servidor
+Si tu objetivo es aprender, desarrollar una SPA,
+o trabajar en el frontend, no necesitas SSR.
+
+le pone NO
 
 
 
