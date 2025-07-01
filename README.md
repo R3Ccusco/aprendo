@@ -20,9 +20,9 @@
 
 <h5>Instalacion Global de Angular: </h5>
 
-´´´
+```
 npm install -g @angular/cli@latest
-´´´
+```
 
 
 
